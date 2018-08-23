@@ -1,12 +1,10 @@
-package com.github.valv.view
+package com.github.valv.oop6s.view
 
 import javafx.application.Platform
 import javafx.scene.control.Label
-import javafx.scene.control.TextArea
 import javafx.scene.control.TextField
 import javafx.scene.layout.BorderPane
 import tornadofx.*
-import java.awt.event.ActionEvent
 
 class MainView : View("IS 2018.6s VVV OOP") {
     override val root: BorderPane by fxml()

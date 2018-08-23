@@ -1,4 +1,4 @@
-package com.github.valv.app
+package com.github.valv.oop6s.app
 
 import javafx.scene.text.FontWeight
 import tornadofx.*
