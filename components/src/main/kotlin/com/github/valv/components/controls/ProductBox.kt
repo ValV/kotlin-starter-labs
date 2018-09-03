@@ -21,7 +21,8 @@ class ProductBox (@NamedArg("text") val text: String): HBox() {
         get() = textField.text
         set(value) {textField.text = value}
 
-    private val onAction: ObjectProperty<EventHandler<ActionEvent>> = object: ObjectPropertyBase<EventHandler<ActionEvent>>() {
+    private val onAction: ObjectProperty<EventHandler<ActionEvent>> =
+            object: ObjectPropertyBase<EventHandler<ActionEvent>>() {
         override fun invalidated() = setEventHandler(ActionEvent.ACTION, get())
         override fun getBean(): Any = this
         override fun getName(): String = "onAction"
